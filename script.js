@@ -131,6 +131,7 @@ document.querySelectorAll('.reveal-card').forEach(card => {
     gsap.fromTo(card, { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2, ease: "power3.out", scrollTrigger: { trigger: card, start: "top bottom-=100" } });
 });
 gsap.from(".reveal-log", { y: 30, opacity: 0, duration: 0.8, stagger: 0.1, scrollTrigger: { trigger: ".logs-section", start: "top bottom-=50" } });
+gsap.from(".reveal-experience", { y: 30, opacity: 0, duration: 0.8, scrollTrigger: { trigger: ".experience-section", start: "top bottom-=50" } });
 
 const cursor = document.querySelector('.cursor-target');
 window.addEventListener('mousemove', e => { 
